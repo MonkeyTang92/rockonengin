@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD SQL MAP Config 3.1//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="callSettersOnNulls" value="true" />
+        <setting name="jdbcTypeForNull" value="NULL" />
+        <setting name="returnInstanceForEmptyRow" value="true" />
+    </settings>
+
+    <!--<plugins>-->
+        <!--<plugin interceptor="tangfancom.dbtracing.mybatis.CatMybatisPlugin">-->
+            <!--<property name="DBUrl" value="jdbc:mysql://192.168.1.1:3408/catdemo" />-->
+        <!--</plugin>-->
+    <!--</plugins>-->
+</configuration>
