@@ -13,7 +13,7 @@
     <bytecodeTargetLevel>
       <module name="rockonengin" target="1.5" />
       <module name="rockonengin-parent" target="1.5" />
-      <module name="rockonengin-web" target="1.5" />
+      <module name="rockonengin-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="rockonengin.dao.ProjectMapper" >
+<mapper namespace="com.rockonengin.dao.rockonengin.ProjectMapper" >
   <resultMap id="BaseResultMap" type="com.rockonengin.model.entity.Project" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="project_name" property="projectName" jdbcType="VARCHAR" />

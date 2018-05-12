@@ -11,7 +11,7 @@ public class Product {
 
     private String productDesc;
 
-    private Integer productCategory;
+    private Integer productCatergory;
 
     private Date insertTime;
 
@@ -49,12 +49,12 @@ public class Product {
         this.productDesc = productDesc == null ? null : productDesc.trim();
     }
 
-    public Integer getProductCategory() {
-        return productCategory;
+    public Integer getProductCatergory() {
+        return productCatergory;
     }
 
-    public void setProductCategory(Integer productCategory) {
-        this.productCategory = productCategory;
+    public void setProductCatergory(Integer productCatergory) {
+        this.productCatergory = productCatergory;
     }
 
     public Date getInsertTime() {
