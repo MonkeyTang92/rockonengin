@@ -11,8 +11,7 @@ public class RockonenginWebController {
 
     @RequestMapping("/index")
     public String toIndex(){
-        return "error";
+        return "index";
     }
-
 
 }
