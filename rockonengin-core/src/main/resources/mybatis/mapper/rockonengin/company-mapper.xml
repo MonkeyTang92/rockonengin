@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.com.rockonengin.dao.com.rockonengin.CompanyMapper">
+    <select id="selectById" parameterType="Integer" resultMap="companyMap">
+        SELECT * FROM company
+        where id = #{id}
+    </select>
+
+    <update id="update" parameterType="com.com.rockonengin.model.entity.Company">
+        UPDATE company
+        SET company_name = #{companyName},
+        company_intro = #{companyIntro},
+        company_culture = #{companyCulture},
+        company_structure_pic_path = #{companyStructurePicPath},
+        company_address = #{companyAddress},
+        company_contact = #{companyContact},
+        company_phone = #{companyPhone},
+        company_email = #{companyEmail},
+        update_time = CURRENT_TIMESTAMP
+        WHERE id = #{id}
+    </update>
+
+
+    <resultMap id="companyMap" type="com.com.rockonengin.model.entity.Company" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="company_name" property="companyName" jdbcType="VARCHAR" />
+        <result column="company_intro" property="companyIntro" jdbcType="VARCHAR" />
+        <result column="company_culture" property="companyCulture" jdbcType="VARCHAR" />
+        <result column="company_structure_pic_path" property="companyStructurePicPath" jdbcType="VARCHAR" />
+        <result column="company_address" property="companyAddress" jdbcType="VARCHAR" />
+        <result column="company_contact" property="companyContact" jdbcType="VARCHAR" />
+        <result column="company_phone" property="companyPhone" jdbcType="VARCHAR" />
+        <result column="company_email" property="companyEmail" jdbcType="VARCHAR" />
+        <result column="insert_time" property="insertTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+</mapper>

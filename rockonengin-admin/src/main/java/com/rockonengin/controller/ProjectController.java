@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by tangfan on 2018/3/18.
  */
 @RestController
-@RequestMapping("/rockonenginService/product")
-public class ProductController {
+@RequestMapping("/rockonenginService/project")
+public class ProjectController {
 
 
 }

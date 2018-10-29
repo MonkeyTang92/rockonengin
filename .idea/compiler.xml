@@ -7,13 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rockonengin" />
+        <module name="rockonengin-admin" />
+        <module name="rockonengin-core" />
         <module name="rockonengin-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="rockonengin" target="1.5" />
+      <module name="rockonengin-admin" target="1.8" />
+      <module name="rockonengin-core" target="1.5" />
       <module name="rockonengin-parent" target="1.5" />
-      <module name="rockonengin-web" target="1.7" />
+      <module name="rockonengin-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
